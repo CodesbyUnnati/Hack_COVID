@@ -3,7 +3,7 @@
 This is not just the normal COVID-19 Website📱. It is a fully responsive website with soothing colours:) along with some twist.
 
 <br>
-<b><a href="https://hack-covid.xyz/">SEE LIVE</a></b>
+<b><a href="https://Hack-COVID.xyz/">SEE LIVE</a></b>
 
 
 <h1>Languages Used</h1>
