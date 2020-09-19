@@ -13,7 +13,7 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
 <li>3-D Visualization of the Corona Cases</li>
 <li>Lets you buy the Corona essentials</li>
 
-<h1>Languages Used</h1>
+<h1>Tech Stack Used</h1>
 <li>HTML5</li>
 <li>CSS3</li>
 <li>Bootstrap4</li>
