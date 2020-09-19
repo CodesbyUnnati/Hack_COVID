@@ -24,8 +24,7 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
 <h1>Editor</h1>
 🆚Code
 
-<h1>Deployment</h1>
-	✔️GITHUB
+<h1>Deployment</h1>✔️GITHUB
 
 <h1>Created and Deployed by</h1>
   <b>Unnati Mishra🙎 & Bhavya Gera</b>
