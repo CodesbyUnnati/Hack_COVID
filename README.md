@@ -28,3 +28,8 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
   
 <h3>Before 3AM Saturday</h3>
 <li>Completed the responsive Navbar design</li>
+<li>Updated the readme.</li>
+<br>
+
+<h3>Before 8:20AM Saturday</h3>
+<li> Added the Home page details and the about section</li>
