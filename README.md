@@ -50,3 +50,7 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
 <br>
 <h3>Before 6PM</H3>
 <li>Guidelines Page Updated</li>
+
+<br>
+<h3>The Shopping Page</h3>
+<li>The Shopping Page Created</li>
