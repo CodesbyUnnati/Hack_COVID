@@ -24,4 +24,7 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
   <b>Unnati Mishra🙎 & Bhavya Gera</b>
   <br><br>
   
-
+  <h1>Timeline</h1>
+  
+<h3>Before 3AM Saturday</h3>
+<li>Completed the responsive Navbar design</li>
