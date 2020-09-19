@@ -3,7 +3,7 @@
 This is not just the normal COVID-19 Website📱. It is a fully responsive website with soothing colours:) along with some twist.
 <br>
 
-<b><a href="http://hack-covid.xyz/">CHECK LIVE</a></b>
+<b><a href="https://codesbyunnati.github.io/Hack_COVID/">CHECK LIVE</a></b>
 
 <img src="https://i.ibb.co/GQcL9pF/progress-2.png" alt="progress-2" border="0">
 <br>
@@ -11,8 +11,8 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
 <h1>Features</h1>
 
 <li>Tells you live COVID patients details</li>
-
-<li>Lets you buy the Corona essentials (Masks)</li>
+<li>3-D Visualization of the Corona Cases</li>
+<li>Lets you buy the Corona essentials</li>
 
 <h1>Tech Stack Used</h1>
 <li>HTML5</li>
@@ -54,7 +54,3 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
 <br>
 <h3>Before 7PM Saturday</h3>
 <li>The Shopping Page Created</li>
-<br>
-<h3>Before 10:30PM Saturday</h3>
-<li>The Tracker Part done</li>
-<li>All pages linked with the domain name</li>
