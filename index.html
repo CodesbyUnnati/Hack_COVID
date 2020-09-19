@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico"/>
     <title>Hack-COVID</title>
 
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet" />
-    <link href="assets/img/Icon.png" rel="icon">
+
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
@@ -19,6 +21,9 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="assets/js/main.js">
+    </script>
 </head>
 
 <body>
@@ -27,8 +32,9 @@
         <div class="container d-flex align-items-center">
             <div class="logo mr-auto">
                 <h1>
-                    <img src="assets/img/Icon.png" style="margin-top: -10px;">
-                    <a href="index.html">Hack-COVID</a>
+                    <!-- <img src="assets/img/Icon.png" style="margin-top: -10px;"> -->
+                    <img src="assets/img/Icon.png" style="margin-top: -15px;" alt="">
+                    <a href="index.html"><img src="assets/img/Logo.png" style="margin-top: -10px;" alt=""></a>
                 </h1>
             </div>
 
@@ -53,7 +59,7 @@
                 border-style: none;
                 color: #fff;
               ">
-                        <a href="index2.html">Store</a>
+                        <a href="#guidelines">Store</a>
                     </li>
                 </ul>
             </nav>
@@ -62,14 +68,14 @@
         </div>
     </header>
 
-    <!-- End Header -->  
+    <!-- End Header -->
 
     <br>
     <br>
     <br>
     <br>
 
-    <!-- ======= About Section ======= --->
+    <!-- ======= About Section ======= -->
 
     <section id="home" class="about">
         <div class="container">
@@ -81,18 +87,18 @@
                 <div class="col-lg-6 pt-4 pt-lg-0">
 
                     <h3 style=" width: 150px; 
-   text-decoration-line: underline;text-decoration-style:underline; text-decoration-color: #FF6940;">Stay Safe</h3>
+   text-decoration-line: underline;text-decoration-style: underline; text-decoration-color: #FF6940;">Stay Safe</h3>
                     <p style="text-align: left;">
                         <br>
 
-                        <h3>CONNECTING THE <br>WORLD TO COMBAT<br> COVID-19</h3>
-                        <br>
+                    <h3>CONNECTING THE <br>WORLD TO COMBAT<br> COVID-19</h3>
+                    <br>
 
-                        Coronavirus disease (COVID-19) is an infectious disease caused by newly discovered coronavirus.
-                        <br>
-                        <br>
+                    Coronavirus disease (COVID-19) is an infectious disease caused by newly discovered coronavirus.
+                    <br>
+                    <br>
 
-                        <a href="guidelines.html"><button>See Guidelines</button></a>
+                    <a href="guidelines (1).html"><button>See Guidelines</button></a>
                     </p>
 
                 </div>
@@ -311,10 +317,81 @@
 
 
 
-    <section id="cases">
+    <section id="india">
 
         <div class="section-title">
-            <h2>Cases</h2>
+            <h2>INDIA</h2>
+            <div class="container" style="width:70%; padding-top:60px;">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Total Population</h3>
+                            <h5><span id="population"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Total Cases</h3>
+                            <h5><span id="cases"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Total Tests</h3>
+                            <h5><span id="tests"></span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Active</h3>
+                            <h5><span id="active"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Recovered</h3>
+                            <h5><span id="recovered"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Deceased</h3>
+                            <h5><span id="deaths"></span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Cases Today</h3>
+                            <h5><span id="todayCases"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Recoveries Today</h3>
+                            <h5><span id="todayRecovered"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Deaths Today</h3>
+                            <h5><span id="todayDeaths"></span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -388,7 +465,7 @@
         </footer>
     </section>
     <!-- End Footer -->
-
+    </section>
 
 
 
@@ -399,6 +476,30 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
+
+
+
+
+
+<!-- JAVASCRIPT FOR FETChING CASES , LIVE UPDATES -->
+<script type="text/javascript">
+    fetch('https://corona.lmao.ninja/v2/countries/India')
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            document.getElementById("tests").innerHTML = data.tests;
+            document.getElementById("active").innerHTML = data.active;
+            document.getElementById("cases").innerHTML = data.cases;
+            document.getElementById("population").innerHTML = data.population;
+            document.getElementById("recovered").innerHTML = data.recovered;
+            document.getElementById("deaths").innerHTML = data.deaths;
+            document.getElementById("todayCases").innerHTML = data.todayCases;
+            document.getElementById("todayRecovered").innerHTML = data.todayRecovered;
+            document.getElementById("todayDeaths").innerHTML = data.todayDeaths;
+        })
+</script>
