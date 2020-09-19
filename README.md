@@ -11,7 +11,6 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
 <h1>Features</h1>
 
 <li>Tells you live COVID patients details</li>
-<li>3-D Visualization of the Corona Cases</li>
 <li>Lets you buy the Corona essentials</li>
 
 <h1>Tech Stack Used</h1>
