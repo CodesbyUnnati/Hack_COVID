@@ -21,9 +21,56 @@
             background-repeat: no-repeat;
             /* background: url("imgs/header.jpeg") center center / cover no-repeat; */
         }
-        /* body{
-          background-color: #fcdaf6;
-        } */
+        .section-title h5 {
+            /* font-size: 32px; */
+            /* font-weight: 600; */
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title h5::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: #ddd;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
+
+        .section-title h5::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: #FF6940;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
+
+
+        .section-title-main h5 {
+            /* font-size: 32px; */
+            /* font-weight: 600; */
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            position: center;
+        }
+
+        .section-title-main h5::after {
+            content: "";
+            position: center;
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: #FF6940;
+            bottom: 0;
+            /* left: calc(50% - 20px); */
+        }
+
     </style>
 
     <title>Guidelines</title>
@@ -31,25 +78,35 @@
 
 <body>
 
+
+<!-- 
+  H
+  E
+  A
+  D
+  E
+  R 
+-->
+
+
     <section id="header" class="jumbotron text-center">
         <h1 style="font-weight: 500;" class="display-3">Guidelines</h1>
-        <hr style="width:20%;">
+      <div class="section-title-main"><h5></h5></div>
         <p class="lead">As per guidelines by Ministry of Health and Family Welfare, Government of India</p>
-        <!-- <hr style="width:20%;">
-        <h5>DOWNLOAD THE AROGYA SETU NOW!</h5>
-        <img src="images/Aarogyasetu.png" style="width:10%">
-        <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357" class="btn"><i class="fab fa-apple fa-4x" style="color: #0A0B0D"></i></a>
-        <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_GB" class="btn"><i class="fab fa-android fa-4x" style="color: #A4C639"></i></a> -->
     </section>
+
+
+<!-- AROGYA
+SETU-->
 
 
     <section id="gallery">
                <div class="col-lg-12 mb-12" style=" padding-bottom:2%;  text-align: center;">
                    <div class="card" style="border:transparent;">
                         <div class="card-body">
-                            <img class="card-img-top" src="images/Aarogyasetu.png" style="width:10%" alt="">
+                            <img class="card-img-top" src="images/Aarogyasetu.png" alt="" style="width:10%" alt="">
                             <h5 class="card-title">Download the Arogya setu app now</h5>
-                            <hr style="width:20%;">
+                            <div class="section-title"><h5></h5></div>
                             <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357" class="btn"><i class="fab fa-apple fa-4x" style="color: #0A0B0D"></i></a>
                             <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_GB" class="btn"><i class="fab fa-android fa-4x" style="color: #A4C639"></i></a>
                             <p class="card-text">
@@ -59,12 +116,18 @@
                </div>
     </section>
 
+
+<!-- FIRST
+SECTION,
+FIRST
+JUMBOTRON -->
+
+
     <section id="gallery">
        <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
+                    <div class="card" style="border: 1px solid #FF6940" style="border: 1px solid #FF6940">
                         <div class="card-body">
                             <h5 class="card-title">COVID-19 testing - when and how?</h5>
                             <p class="card-text">All individuals need not be tested, because
@@ -83,8 +146,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="imgs/pattern2.jpeg" alt="">
+                    <div class="card" style="border: 1px solid #FF6940">
+                        
                         <div class="card-body">
                             <h5 class="card-title">Whom to test?</h5>
                             <p class="card-text">ALL symptomatic people who</p>
@@ -110,8 +173,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <img class="card-img-top" src="imgs/pattern3.jpeg" alt="">
+                    <div class="card" style="border: 1px solid #FF6940">
+                        
                         <div class="card-body">
                             <h5 class="card-title">Observe social distancing at all times</h5>
                             <p class="card-text">There is enough of everything, everyday for everyone
@@ -133,9 +196,8 @@
 
             <div class="row">
               <div class="col-lg-4 mb-4">
-                  <div class="card">
-                      <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                      <div class="card-body">
+                  <div class="card" style="border: 1px solid #FF6940">
+                                           <div class="card-body">
                           <h5 class="card-title">Travelling?</h5>
                           <ul class="card-text">
                             <li>Inform the airlines crew if you have cough, fever or difficulty in breathing.</li>
@@ -149,9 +211,8 @@
                   </div>
               </div>
               <div class="col-lg-4 mb-4">
-                  <div class="card">
-                      <img class="card-img-top" src="imgs/pattern2.jpeg" alt="">
-                      <div class="card-body">
+                  <div class="card" style="border: 1px solid #FF6940">
+                                           <div class="card-body">
                           <h5 class="card-title">Protective Measures-</h5>
                           <ul class="card-text">
                             <li>A distance of atleast 1m is important to ensure safety for all.</li>
@@ -165,9 +226,8 @@
                   </div>
               </div>
               <div class="col-lg-4 mb-4">
-                  <div class="card">
-                      <img class="card-img-top" src="imgs/pattern3.jpeg" alt="">
-                      <div class="card-body">
+                  <div class="card" style="border: 1px solid #FF6940">
+                                           <div class="card-body">
                           <h5 class="card-title">Observe social distancing at all times</h5>
                           <p class="card-text">There is enough of everything, everyday for everyone
                             Don't Panic | Don't Rush | Don't Overstock</p>
@@ -189,9 +249,17 @@
        </div>
     </section>
 
+
+<!-- SECOND
+SECTION,
+SECOND
+JUMBOTRON -->
+
+
+
     <section id="header" class="jumbotron text-center">
       <h1 class="display-3">Detail Question and Answers on COVID-19 for Public</h1>
-      <hr style="width:20%;">
+      <div class="section-title-main"><h5></h5></div>
       <p class="lead">As per guidelines by Ministry of Health and Family Welfare, Government of India</p>
       <!-- <a href="" class="btn btn-primary">Do Something</a>
       <a href="" class="btn btn-success">Another Thing</a> -->
@@ -201,8 +269,7 @@
         <div class="container">
              <div class="row">
                  <div class="col-lg-4 mb-4">
-                     <div class="card">
-                         <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
+                     <div class="card" style="border: 1px solid #FF6940">
                          <div class="card-body">
                              <h5 class="card-title">What is corona virus</h5>
                              <p class="card-text">Corona viruses are a large family of viruses which may cause illness in animals or humans. In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to morem severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19. 
@@ -211,9 +278,8 @@
                      </div>
                  </div>
                  <div class="col-lg-4 mb-4">
-                  <div class="card">
-                      <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                      <div class="card-body">
+                  <div class="card" style="border: 1px solid #FF6940">
+                                           <div class="card-body">
                           <h5 class="card-title">What is COVID-19</h5>
                           <p class="card-text">COVID-19 is the infectious disease caused by the most recently discovered corona virus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019.                             
                          </p>
@@ -221,9 +287,8 @@
                   </div>
                 </div>
                 <div class="col-lg-4 mb-4">
-                  <div class="card">
-                      <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                      <div class="card-body">
+                  <div class="card" style="border: 1px solid #FF6940">
+                                           <div class="card-body">
                           <h5 class="card-title">Can the virus that causes COVID-19 be transmitted through the air?</h5>
                           <p class="card-text">Studies to date suggest that the virus that causes COVID-19 is mainly
                             transmitted through contact with respiratory droplets rather than
@@ -236,9 +301,8 @@
 
              <div class="row">
               <div class="col-lg-4 mb-4">
-                  <div class="card">
-                      <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                      <div class="card-body">
+                  <div class="card" style="border: 1px solid #FF6940">
+                                           <div class="card-body">
                           <h5 class="card-title">What are the symptoms of COVID-19</h5>
                           <p class="card-text">The most common symptoms of COVID-19 are fever, tiredness, and
                             dry cough. Some patients may have aches and pains, nasal
@@ -257,9 +321,8 @@
                   </div>
               </div>
               <div class="col-lg-4 mb-4">
-               <div class="card">
-                   <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                   <div class="card-body">
+               <div class="card" style="border: 1px solid #FF6940">
+                                  <div class="card-body">
                        <h5 class="card-title">How does COVID-19 spread</h5>
                        <p class="card-text">People can catch COVID-19 from others who have the virus. The
                         disease can spread from person to person through small droplets from
@@ -276,9 +339,8 @@
                </div>
              </div>
              <div class="col-lg-4 mb-4">
-               <div class="card">
-                   <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                   <div class="card-body">
+               <div class="card" style="border: 1px solid #FF6940">
+                                  <div class="card-body">
                        <h5 class="card-title">Can CoVID-19 be caught from a person who has no symptoms? </h5>
                        <p class="card-text">The main way the disease spreads is through respiratory droplets
                         expelled by someone who is coughing. The risk of catching COVID-19
@@ -295,9 +357,8 @@
 
           <div class="row">
             <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                    <div class="card-body">
+                <div class="card" style="border: 1px solid #FF6940">
+                                     <div class="card-body">
                         <h5 class="card-title">Is COVID-19 the same as SARS?</h5>
                         <p class="card-text">No. The virus that causes COVID-19 and the one that caused the
                           outbreak of Severe Acute Respiratory Syndrome (SARS) in 2003 are
@@ -311,9 +372,8 @@
                 </div>
             </div>
             <div class="col-lg-4 mb-4">
-             <div class="card">
-                 <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                 <div class="card-body">
+             <div class="card" style="border: 1px solid #FF6940">
+                            <div class="card-body">
                      <h5 class="card-title">Can humans become infected with the COVID-19 from an animal source?
                       </h5>
                      <p class="card-text">Coronaviruses are a large family of viruses that are common in
@@ -327,9 +387,8 @@
              </div>
            </div>
            <div class="col-lg-4 mb-4">
-             <div class="card">
-                 <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                 <div class="card-body">
+             <div class="card" style="border: 1px solid #FF6940">
+                            <div class="card-body">
                      <h5 class="card-title">How long does the virus survive on surfaces?
                     </h5>
                      <p class="card-text">It is not certain how long the virus that causes COVID-19 survives on
@@ -350,9 +409,8 @@
 
           <div class="row">
             <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                    <div class="card-body">
+                <div class="card" style="border: 1px solid #FF6940">
+                                     <div class="card-body">
                         <h5 class="card-title">How to put on use take off and dispose of a mask?</h5>
                         <ol class="card-text"> 
                             <li>Remember, a mask should only be used by health workers, care takers,
@@ -390,9 +448,8 @@
                 </div>
               </div>
               <div class="col-lg-4 mb-4">
-              <div class="card">
-                  <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                  <div class="card-body">
+              <div class="card" style="border: 1px solid #FF6940">
+                               <div class="card-body">
                       <h5 class="card-title">Protection measures for everyone
                         </h5>
                       <ol class="card-text">
@@ -439,9 +496,8 @@
               </div>
             </div>
             <div class="col-lg-4 mb-4">
-              <div class="card">
-                  <img class="card-img-top" src="imgs/pattern1.jpeg" alt="">
-                  <div class="card-body">
+              <div class="card" style="border: 1px solid #FF6940">
+                               <div class="card-body">
                       <h5 class="card-title">Protection measures for persons who are in or have recently visited (past
                         14 days) areas where COVID-19 is spreading                        
                       </h5>
@@ -487,25 +543,22 @@ JUMBOTRON -->
 
       <section id="header" class="jumbotron text-center">
         <h1 class="display-3">Covid-19 Facilities in States/Union Territories</h1>
-        <hr style="width:20%;">
+      <div class="section-title-main"><h5></h5></div>">
         <p class="lead">As per guidelines by Ministry of Health and Family Welfare, Government of India</p>
       </section>
 
 
       <section id="gallery">
         <div class="container">
-
                 <div class="col-lg-12 mb-12">
-                    <div class="card">
+                    <div class="card" style="border: 1px solid #FF6940">
                          <div class="card-body">
                              <h5 class="card-title">The list of hospitals earmarked by the States/UTs along with the State specific help line
                               numbers is given below:</h5>
-
                               <div class="row">
                               <div class="col-lg-6 mb-6">
                                 <div class="card" style="border:transparent;">
                                   <div class="card-body">
-
                                     <p class="card-text">
                                       <h6>Andaman &
                                         Nicobar
@@ -642,16 +695,12 @@ JUMBOTRON -->
                                         <li><a href="https://leh.nic.in/notice/covid19-hospital/">State Website for earmarked COVID facilties</a></li>
                                       </ul>
                                     </p>
-
                                   </div> 
                                 </div>
                               </div>
-
-
                               <div class="col-lg-6 mb-6">
                                 <div class="card" style="border:transparent;">
                                   <div class="card-body">
-
                                     <p class="card-text">
                                       <h6>Lakshadweep</h6>
                                         <ul>
@@ -781,27 +830,26 @@ JUMBOTRON -->
                                         <li><a href="https://www.wbhealth.gov.in/uploaded_files/corona/Notification___Revised___67_Covid_Hospital___30.04_.2020_.pdf">State Website for earmarked COVID facilties</a></li>
                                       </ul>
                                     </p>
-
                                   </div> 
                                 </div>
                               </div>          
                               </div>
                          </div>
-
                     </div>
-                  
                 </div>
         </div>
       </section>   
 
 
+<!-- AROGYA
+SETU-->
+
       <section id="gallery">
         <div class="col-lg-12 mb-12" style=" padding-bottom:2%;  text-align: center;">
-            <div class="card" style="border:transparent;">
-                 <div class="card-body">
-                     <img class="card-img-top" src="images/Aarogyasetu.png" style="width:10%" alt="">
+            <div class="card" style="border:transparent; padding-top: 100px;">
+                 <div class="card-body" >
                      <h5 class="card-title">Download the Arogya setu app now</h5>
-                     <hr style="width:20%;">
+                     <div class="section-title"><h5></h5></div>
                      <a href="https://apps.apple.com/in/app/aarogyasetu/id1505825357" class="btn"><i class="fab fa-apple fa-4x" style="color: #0A0B0D"></i></a>
                      <a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_GB" class="btn"><i class="fab fa-android fa-4x" style="color: #A4C639"></i></a>
                      <p class="card-text">
@@ -811,13 +859,5 @@ JUMBOTRON -->
         </div>
       </section>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script> -->
 </body>
-
 </html>
