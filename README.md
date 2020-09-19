@@ -45,3 +45,7 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
 <li>Symptoms</li>
 <li>Prevention</li>
 <li>Footer</li>
+
+<br>
+<h3>Before 6PM</H3>
+<li>Guidelines Page Updated</li>
