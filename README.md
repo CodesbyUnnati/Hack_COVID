@@ -58,3 +58,7 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
 <br>
 <h3> Before 2PM SUNDAY</h3>
 <li>All changes updated</li>
+
+<br>
+<h3> Before 3:30AM SUNDAY</h3>
+<li>Payment Link Added</li>
