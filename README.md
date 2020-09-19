@@ -41,5 +41,7 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
 <li> Added the Home page details and the about section</li>
 <br>
 
-<h3>Before 12:20PM</h3>
-<li>Added symptoms, prevention and footer section in the main page</h3>
+<h3>Before 12:20PM Saturday</h3>
+<li>Symptoms</li>
+<li>Prevention</li>
+<li>Footer</li>
