@@ -1,7 +1,10 @@
 #  📍Hack_COVID
 
 This is not just the normal COVID-19 Website📱. It is a fully responsive website with soothing colours:) along with some twist.
+<br>
+
 <b><a href="https://codesbyunnati.github.io/Hack_COVID/">SEE LIVE</a></b>
+<img src="https://i.ibb.co/GQcL9pF/progress-2.png" alt="progress-2" border="0">
 <br>
 
 <h1>Features</h1>
