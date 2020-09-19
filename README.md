@@ -48,9 +48,9 @@ This is not just the normal COVID-19 Website📱. It is a fully responsive websi
 <li>Footer</li>
 
 <br>
-<h3>Before 6PM</H3>
+<h3>Before 6PM Saturday</H3>
 <li>Guidelines Page Updated</li>
 
 <br>
-<h3>Before 7PM</h3>
+<h3>Before 7PM Saturday</h3>
 <li>The Shopping Page Created</li>
