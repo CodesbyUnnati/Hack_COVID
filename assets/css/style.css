@@ -289,3 +289,72 @@ h6 {
 .mobile-nav-active .mobile-nav-toggle i {
     color: #fff;
 }
+
+/*--------------------
+    # Sections General
+    ------------------*/
+section {
+    padding: 60px 0;
+}
+
+.section-bg {
+    background-color: #f7fbfe;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #FF6940;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+* .section-title p {
+    margin-bottom: 0;
+}
+
+
+button {
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 9px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    background: #385A64;
+    border-style: none;
+    color: #fff;
+}
+
+button:hover {
+    background: #1A2E35;
+    color: #fff;
+}
