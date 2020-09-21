@@ -1,4 +1,4 @@
-#  📍Hack_COVID
+#  📍Hack_COVID || Hack Chennai  Hackathon Submission
 
 This is not just the normal COVID-19 Website📱. It is a fully responsive website with soothing colours:) along with some twist.
 <br>
