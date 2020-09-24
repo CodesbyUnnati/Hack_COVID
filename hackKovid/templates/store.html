@@ -1,0 +1,388 @@
+{% extends "basic.html" %}
+{% load static %}
+{% block header %}
+<!-- Header section -->
+	<header class="header-section">
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 text-center text-lg-left">
+						<!-- logo -->
+						<img src="{% static 'assets/img/Icon.png' %}" style="margin-top: -15px; width:50px;" alt="">
+						<a href="/"><img src="{% static 'assets/img/Logo.png' %}" style=" width:80px;" alt=""></a>
+					</div>
+					<div class="col-xl-5 col-lg-4">
+						<form class="header-search-form">
+							<input type="text" placeholder="Search....">
+							<button><i class="flaticon-search"></i></button>
+						</form>
+					</div>
+					<div class="col-xl-5 col-lg-6">
+						<div class="user-panel">
+							<div class="up-item">
+								<i class="flaticon-profile"></i>
+								<a href="" id="login">Sign In </a><a href="/" id="logout"
+									style="visibility: hidden">Sign Out </a><a href="">Create Account</a>
+							</div>
+							<div class="up-item">
+								<div class="shopping-card">
+									<i class="flaticon-bag"></i>
+								</div>
+								<a href="#">Shopping Cart</a>
+							</div>
+							<div class="up-item">
+								<a href="#" id="cust_button" style="visibility: hidden">&ensp; Profile </a>
+								<a href="shopkeeper" id="shop_button" style="visibility: hidden">Shopkeeper</a>
+								<a href="delivery" id="delivery_button" style="visibility: hidden">&ensp;
+									delivery</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="main-navbar">
+			<div class="container">
+				<!-- menu -->
+				<ul class="main-menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Men</a></li>
+					<li><a href="#">Kids</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Header section end -->
+{% endblock header %}
+
+{% block body %}
+
+<!-- Hero section -->
+	<section class="hero-section" style="margin-top: -4em;margin-bottom: -4em;">
+		<div class="hero-slider owl-carousel">
+			<div class="hs-item set-bg" data-setbg="{% static 'img/back.jpg' %}">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6 col-lg-7 text-black">
+							<span>New Arrivals</span>
+							<h2>Face Masks</h2>
+							<p style="font-weight: 800; color: black;"><b>Let us help you , start by helping us. Don't compromise your greatest wealth. Buy from
+								this wide range of masks.</b></p>
+						</div>
+					</div>
+					<div class="offer-card text-white">
+						<span>from</span>
+						<h4>Rs.20</h4>
+						<hr>
+						<h5>SHOP NOW</h5>
+					</div>
+				</div>
+			</div>
+			<div class="hs-item set-bg" data-setbg="{% static 'img/sani.jpg' %}">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-6 col-lg-7 text-black">
+							<span>New Arrivals</span>
+							<h2>Sanitisers</h2>
+							<p style="font-weight: 800; color: #fff;">Let us help you , start by helping us. Don't compromise your greatest wealth. Buy from
+								this wide range of sanitisers.</p>
+							<a href="#" class="site-btn sb-line">DISCOVER</a>
+							<a href="#" class="site-btn sb-white">ADD TO CART</a>
+						</div>
+					</div>
+					<div class="offer-card text-white">
+						<span>from</span>
+						<h4>Rs.120/150ml</h4>
+						<hr>
+						<h5>SHOP NOW</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="slide-num-holder" id="snh-1"></div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+
+
+	<!-- Features section -->
+	<section class="features-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 p-0 feature">
+					<div class="feature-inner">
+						<div class="feature-icon">
+							<img src="{% static 'img/icons/1.png' %}" alt="#">
+						</div>
+						<h2>Fast Secure Payments</h2>
+					</div>
+				</div>
+				<div class="col-md-4 p-0 feature">
+					<div class="feature-inner">
+						<div class="feature-icon">
+							<img src="{% static 'img/icons/2.png' %}" alt="#">
+						</div>
+						<h2>Premium Products</h2>
+					</div>
+				</div>
+				<div class="col-md-4 p-0 feature">
+					<div class="feature-inner">
+						<div class="feature-icon">
+							<img src="{% static 'img/icons/3.png' %}" alt="#">
+						</div>
+						<h2>Free & fast Delivery</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Features section end -->
+
+
+	<!-- latest product section -->
+	<section class="top-letest-product-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>LATEST PRODUCTS</h2>
+			</div>
+
+			<div class="product-slider owl-carousel">
+
+				<div class="product-item">
+					<div class="pi-pic">
+						<img src="{% static '/img/pic-2.jpg' %}" alt="">
+					</div>
+					<div class="pi-text">
+						<a href="https://g.co/payinvite/dz8sc4r">
+							<h6 style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: green;
+                border-style: none;
+                color: #fff;">Rs.20</h6>
+						</a>
+						<p>Surgical(3 layer)</p>
+					</div>
+				</div>
+
+				<div class="product-item">
+					<div class="pi-pic">
+						<div class="tag-new">New</div>
+						<img src="{% static '/img/pic1.jpg' %}" alt="">
+					</div>
+					<div class="pi-text">
+						<a href="https://g.co/payinvite/dz8sc4r">
+							<h6 style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: green;
+                border-style: none;
+                color: #fff;">Rs.120</h6>
+						</a>
+						<p>Printed</p>
+					</div>
+				</div>
+
+				<div class="product-item">
+					<div class="pi-pic">
+						<img src="{% static '/img/pic11.jpg' %}" alt="">
+
+					</div>
+					<div class="pi-text">
+						<a href="https://g.co/payinvite/dz8sc4r">
+							<h6 style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: green;
+                border-style: none;
+                color: #fff;">Rs.190</h6>
+						</a>
+						<p>Formal</p>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="pi-pic">
+						<img src="{% static '/img/pic4.jpg' %}" alt="">
+					</div>
+					<div class="pi-text">
+						<a href="https://g.co/payinvite/dz8sc4r">
+							<h6 style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: green;
+                border-style: none;
+                color: #fff;">Rs.240</h6>
+						</a>
+						<p>Doctor's Choice</p>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="pi-pic">
+						<img src="{% static '/img/pic5.jpg' %}" alt="">
+					</div>
+					<div class="pi-text">
+						<a href="https://g.co/payinvite/dz8sc4r">
+							<h6 style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: green;
+                border-style: none;
+                color: #fff;">Rs.160</h6>
+						</a>
+						<p>Colourful </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- letest product section end -->
+
+
+
+	<!-- Product filter section -->
+	<section class="product-filter-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>BROWSE TOP SELLING PRODUCTS</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="product-item">
+						<div class="pi-pic">
+							<img src="{% static '/img/pic6.jpg' %}" alt="">
+							<div class="pi-links">
+								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+							</div>
+						</div>
+						<div class="pi-text">
+							<a href="https://g.co/payinvite/dz8sc4r">
+								<h6 style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: green;
+                border-style: none;
+                color: #fff;">Rs.70</h6>
+							</a>
+							<p>Textured </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="product-item">
+						<div class="pi-pic">
+							<div class="tag-sale">ON SALE</div>
+							<img src="{% static '/img/pic7.jpg' %}" alt="">
+							<div class="pi-links">
+								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+							</div>
+						</div>
+						<div class="pi-text">
+							<a href="https://g.co/payinvite/dz8sc4r">
+								<h6 style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: green;
+                border-style: none;
+                color: #fff;">Rs.90</h6>
+							</a>
+							<p>Black Track</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="product-item">
+						<div class="pi-pic">
+							<img src="{% static '/img/pic8.jpg' %}" alt="">
+							<div class="pi-links">
+								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+							</div>
+						</div>
+						<div class="pi-text">
+							<a href="https://g.co/payinvite/dz8sc4r">
+								<h6 style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: green;
+                border-style: none;
+                color: #fff;">Rs.40</h6>
+							</a>
+							<p>Green Disposal </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="product-item">
+						<div class="pi-pic">
+							<img src="{% static '/img/pic9.jpg' %}" alt="">
+							<div class="pi-links">
+								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
+								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+							</div>
+						</div>
+						<div class="pi-text">
+							<a href="https://g.co/payinvite/dz8sc4r">
+								<h6 style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 5px 5px 5px 5px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: green;
+                border-style: none;
+                color: #fff;">Rs.340</h6>
+							</a>
+							<p>Flamboyant Pink</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</section>
+	<!-- Product filter section end -->
+
+
+
+{% endblock body %}
