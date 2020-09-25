@@ -1,5 +1,8 @@
 {% extends "basic.html" %}
 {% load static %}
+{% block title %}
+Home
+{% endblock title %}
 
 {% block header %}
 <!-- ======= Header ======= -->
@@ -21,7 +24,7 @@
                     <li><a href="#modes">Modes</a></li>
                     <li><a href="#symptoms">Symptoms</a></li>
                     <li><a href="#prevention">Prevention</a></li>
-                    <li><a href="#cases">Cases</a></li>
+                    <li><a href="#india">Cases</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li style="
                 font-weight: 800;
@@ -371,5 +374,21 @@
         </div>
 
     </section>
+
+    <script>fetch('https://corona.lmao.ninja/v2/countries/India')
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            document.getElementById("tests").innerHTML = data.tests;
+            document.getElementById("active").innerHTML = data.active;
+            document.getElementById("cases").innerHTML = data.cases;
+            document.getElementById("population").innerHTML = data.population;
+            document.getElementById("recovered").innerHTML = data.recovered;
+            document.getElementById("deaths").innerHTML = data.deaths;
+            document.getElementById("todayCases").innerHTML = data.todayCases;
+            document.getElementById("todayRecovered").innerHTML = data.todayRecovered;
+            document.getElementById("todayDeaths").innerHTML = data.todayDeaths;
+        })</script>
 
 {% endblock body %}
