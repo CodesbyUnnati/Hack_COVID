@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}"/>
-    <title>Hack-COVID</title>
+    <title>{% block title %}{% endblock title %} | Hack-COVID</title>
 
     <!-- Google Fonts -->
     <link
@@ -112,7 +112,7 @@
 			<div class="container">
 				<div class="copyright" style="padding-bottom: 50px;">
 					Made with ❤️️ by <strong><a style="color: #FF725E;" href="https://linktr.ee/Ping_Unnati">Unnati Mishra</a> & <a style="color: #FF725E;"
-							href="https://linktr.ee/bhavyagera">Bhavya Gera</a></strong>.
+							href="https://linktr.ee/bhavyagera">Bhavya Gera</a></strong> & <strong><a style="color: #FF725E;" href="https://linktr.ee/coderaman07">Aman Ojha</a></strong>.
 				</div>
 			</div>
 		</footer>
@@ -120,22 +120,23 @@
     <!-- End Footer -->
     
     <!-- JAVASCRIPT FOR FETChING CASES , LIVE UPDATES -->
-<script type="text/javascript">
-    fetch('https://corona.lmao.ninja/v2/countries/India')
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            document.getElementById("tests").innerHTML = data.tests;
-            document.getElementById("active").innerHTML = data.active;
-            document.getElementById("cases").innerHTML = data.cases;
-            document.getElementById("population").innerHTML = data.population;
-            document.getElementById("recovered").innerHTML = data.recovered;
-            document.getElementById("deaths").innerHTML = data.deaths;
-            document.getElementById("todayCases").innerHTML = data.todayCases;
-            document.getElementById("todayRecovered").innerHTML = data.todayRecovered;
-            document.getElementById("todayDeaths").innerHTML = data.todayDeaths;
-        })
+<script>
+      if (localStorage.getItem('cart') == null) {
+        var cart = {};
+      } else {
+        cart = JSON.parse(localStorage.getItem('cart'));
+      }
+
+
+    //   setInterval(function(){
+    //       if (localStorage.length < 1){
+    //     document.getElementById('numb').innerHTML = 0;
+    //       }
+    //       else{
+    //     document.getElementById('numb').innerHTML = localStorage.length;
+
+    //       }
+    //     }, 5);
 </script>
 
 
