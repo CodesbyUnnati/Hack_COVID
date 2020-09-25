@@ -1,4 +1,7 @@
 {% extends "basic.html" %}
+{% block title %}
+Store
+{% endblock title %}
 {% load static %}
 {% block header %}
 <!-- Header section -->
@@ -21,14 +24,17 @@
 						<div class="user-panel">
 							<div class="up-item">
 								<i class="flaticon-profile"></i>
-								<a href="" id="login">Sign In </a><a href="/" id="logout"
-									style="visibility: hidden">Sign Out </a><a href="">Create Account</a>
+								<a href="/signup/" id="login">Sign In </a><a href="/" id="logout"
+									style="visibility: hidden">Sign Out </a><a href="/create/">Create Account</a>
 							</div>
 							<div class="up-item">
-								<div class="shopping-card">
-									<i class="flaticon-bag"></i>
-								</div>
-								<a href="#">Shopping Cart</a>
+							<button class="btn btn-primary" style="border-radius: 16px;color: white;">
+								<a href="/cart/">
+									<div class="shopping-card">
+										<i class="flaticon-bag"></i>
+									</div>
+									Shopping Cart</a>
+							</button>
 							</div>
 							<div class="up-item">
 								<a href="#" id="cust_button" style="visibility: hidden">&ensp; Profile </a>
@@ -41,9 +47,10 @@
 				</div>
 			</div>
 		</div>
+		<!-- menu 
 		<nav class="main-navbar">
 			<div class="container">
-				<!-- menu -->
+				
 				<ul class="main-menu">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Women</a></li>
@@ -54,7 +61,7 @@
 				</ul>
 			</div>
 		</nav>
-	</header>
+	</header>-->
 	<!-- Header section end -->
 {% endblock header %}
 
@@ -153,31 +160,12 @@
 
 			<div class="product-slider owl-carousel">
 
-				<div class="product-item">
-					<div class="pi-pic">
-						<img src="{% static '/img/pic-2.jpg' %}" alt="">
-					</div>
-					<div class="pi-text">
-						<a href="https://g.co/payinvite/dz8sc4r">
-							<h6 style="
-                font-weight: 800;
-                font-size: 13px;
-                display: inline-block;
-                padding: 5px 5px 5px 5px;
-                border-radius: 50px;
-                transition: 0.5s;
-                background: green;
-                border-style: none;
-                color: #fff;">Rs.20</h6>
-						</a>
-						<p>Surgical(3 layer)</p>
-					</div>
-				</div>
+				{% for items in item %}
 
+				{% if items.UploadToHINTLatestProductOrTOPSellingProducts == 'Latest Products' %}
 				<div class="product-item">
 					<div class="pi-pic">
-						<div class="tag-new">New</div>
-						<img src="{% static '/img/pic1.jpg' %}" alt="">
+						<img src="/media/{{items.image}}" alt="">
 					</div>
 					<div class="pi-text">
 						<a href="https://g.co/payinvite/dz8sc4r">
@@ -190,73 +178,13 @@
                 transition: 0.5s;
                 background: green;
                 border-style: none;
-                color: #fff;">Rs.120</h6>
+                color: #fff;" id="pr{{items.id}}">Rs.{{items.Price}}</h6>
 						</a>
-						<p>Printed</p>
+						<p id="pr{{items.id}}">{{items.Name}}</p>
 					</div>
 				</div>
-
-				<div class="product-item">
-					<div class="pi-pic">
-						<img src="{% static '/img/pic11.jpg' %}" alt="">
-
-					</div>
-					<div class="pi-text">
-						<a href="https://g.co/payinvite/dz8sc4r">
-							<h6 style="
-                font-weight: 800;
-                font-size: 13px;
-                display: inline-block;
-                padding: 5px 5px 5px 5px;
-                border-radius: 50px;
-                transition: 0.5s;
-                background: green;
-                border-style: none;
-                color: #fff;">Rs.190</h6>
-						</a>
-						<p>Formal</p>
-					</div>
-				</div>
-				<div class="product-item">
-					<div class="pi-pic">
-						<img src="{% static '/img/pic4.jpg' %}" alt="">
-					</div>
-					<div class="pi-text">
-						<a href="https://g.co/payinvite/dz8sc4r">
-							<h6 style="
-                font-weight: 800;
-                font-size: 13px;
-                display: inline-block;
-                padding: 5px 5px 5px 5px;
-                border-radius: 50px;
-                transition: 0.5s;
-                background: green;
-                border-style: none;
-                color: #fff;">Rs.240</h6>
-						</a>
-						<p>Doctor's Choice</p>
-					</div>
-				</div>
-				<div class="product-item">
-					<div class="pi-pic">
-						<img src="{% static '/img/pic5.jpg' %}" alt="">
-					</div>
-					<div class="pi-text">
-						<a href="https://g.co/payinvite/dz8sc4r">
-							<h6 style="
-                font-weight: 800;
-                font-size: 13px;
-                display: inline-block;
-                padding: 5px 5px 5px 5px;
-                border-radius: 50px;
-                transition: 0.5s;
-                background: green;
-                border-style: none;
-                color: #fff;">Rs.160</h6>
-						</a>
-						<p>Colourful </p>
-					</div>
-				</div>
+				{% endif %}
+				{% endfor %}
 			</div>
 		</div>
 	</section>
@@ -271,118 +199,63 @@
 				<h2>BROWSE TOP SELLING PRODUCTS</h2>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 col-sm-6">
-					<div class="product-item">
-						<div class="pi-pic">
-							<img src="{% static '/img/pic6.jpg' %}" alt="">
-							<div class="pi-links">
-								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+				{% for items in item %}
+						{% if items.UploadToHINTLatestProductOrTOPSellingProducts == 'Top Selling Products' %}
+						<div class="col-lg-3 col-sm-6">
+							<div class="product-item">
+								<div class="pi-pic">
+									<img src="/media/{{items.image}}" alt="">
+									<div class="pi-links">
+										<a onclick="AddToCart(this.id)" class="btn btn-outline-primary" id="{{items.id}}"><i class="flaticon-bag"></i><span>Add to Cart</span></a>
+										<a class="wishlist-btn"><i class="flaticon-heart"></i></a>
+									</div>
+								</div>
+								<div class="pi-text">
+									<a href="https://g.co/payinvite/dz8sc4r">
+										<h6 style="
+						font-weight: 800;
+						font-size: 13px;
+						display: inline-block;
+						padding: 5px 5px 5px 5px;
+						border-radius: 50px;
+						transition: 0.5s;
+						background: green;
+						border-style: none;
+						color: #fff;" id="price{{items.id}}">Rs.{{items.Price}}</h6>
+									</a>
+									<p id="name{{items.id}}">{{items.Name}}</p>
+								</div>
 							</div>
 						</div>
-						<div class="pi-text">
-							<a href="https://g.co/payinvite/dz8sc4r">
-								<h6 style="
-                font-weight: 800;
-                font-size: 13px;
-                display: inline-block;
-                padding: 5px 5px 5px 5px;
-                border-radius: 50px;
-                transition: 0.5s;
-                background: green;
-                border-style: none;
-                color: #fff;">Rs.70</h6>
-							</a>
-							<p>Textured </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="product-item">
-						<div class="pi-pic">
-							<div class="tag-sale">ON SALE</div>
-							<img src="{% static '/img/pic7.jpg' %}" alt="">
-							<div class="pi-links">
-								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-							</div>
-						</div>
-						<div class="pi-text">
-							<a href="https://g.co/payinvite/dz8sc4r">
-								<h6 style="
-                font-weight: 800;
-                font-size: 13px;
-                display: inline-block;
-                padding: 5px 5px 5px 5px;
-                border-radius: 50px;
-                transition: 0.5s;
-                background: green;
-                border-style: none;
-                color: #fff;">Rs.90</h6>
-							</a>
-							<p>Black Track</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="product-item">
-						<div class="pi-pic">
-							<img src="{% static '/img/pic8.jpg' %}" alt="">
-							<div class="pi-links">
-								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-							</div>
-						</div>
-						<div class="pi-text">
-							<a href="https://g.co/payinvite/dz8sc4r">
-								<h6 style="
-                font-weight: 800;
-                font-size: 13px;
-                display: inline-block;
-                padding: 5px 5px 5px 5px;
-                border-radius: 50px;
-                transition: 0.5s;
-                background: green;
-                border-style: none;
-                color: #fff;">Rs.40</h6>
-							</a>
-							<p>Green Disposal </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6">
-					<div class="product-item">
-						<div class="pi-pic">
-							<img src="{% static '/img/pic9.jpg' %}" alt="">
-							<div class="pi-links">
-								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-							</div>
-						</div>
-						<div class="pi-text">
-							<a href="https://g.co/payinvite/dz8sc4r">
-								<h6 style="
-                font-weight: 800;
-                font-size: 13px;
-                display: inline-block;
-                padding: 5px 5px 5px 5px;
-                border-radius: 50px;
-                transition: 0.5s;
-                background: green;
-                border-style: none;
-                color: #fff;">Rs.340</h6>
-							</a>
-							<p>Flamboyant Pink</p>
-						</div>
-					</div>
-				</div>
+						{% endif %}
+				{% endfor %}
 			</div>
-		</div>
-
 		</div>
 	</section>
 	<!-- Product filter section end -->
 
+<script>$('.addtoCart').click(function(){
+	
+
+  })
+
+  function AddToCart(itemID) {
+	  console.log(itemID);
+	  console.log(typeof(itemID));
+	  var idstring = itemID;
+	  if(cart[idstring] != undefined){
+		qty = cart[idstring][0] + 1;
+	  }else{
+		qty = 1;
+		name = document.getElementById('name'+idstring).innerHTML;
+		priceet = document.getElementById('price'+idstring).innerText.split('.')[1];
+		price = 'Rs. ' + priceet;
+		cart[idstring] = [qty, name, price];
+	  }
+	  localStorage.setItem('cart', JSON.stringify(cart));
+	  document.getElementById(idstring).innerText = 'Added'
+  }
+</script>
 
 
 {% endblock body %}
