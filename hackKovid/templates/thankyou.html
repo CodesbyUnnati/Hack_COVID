@@ -1,0 +1,73 @@
+{% extends "basic.html" %}
+{% block title %}
+Order Sucessfull
+{% endblock title %}
+{% load static %}
+{% block header %}
+<!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <div class="logo mr-auto">
+                <h1>
+                    <!-- <img src="assets/img/Icon.png" style="margin-top: -10px;"> -->
+                    <img src="{% static 'assets/img/Icon.png' %}" style="margin-top: -15px;" alt="">
+                    <a href="/"><img src="{% static 'assets/img/Logo.png' %}" style="margin-top: -10px;" alt=""></a>
+                </h1>
+            </div>
+
+            <!--NAVBAR-->
+
+            <nav class="nav-menu d-none d-lg-block ml-auto">
+                <ul>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/#modes">Modes</a></li>
+                    <li><a href="/#symptoms">Symptoms</a></li>
+                    <li><a href="/#prevention">Prevention</a></li>
+                    <li><a href="/#cases">Cases</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    <li style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 1px 1px 1px 1px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: rgb(255, 233, 221);
+                border-style: none;
+                color: #fff;
+              ">
+                        <a href="/store/">Store</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- NAVBAR -->
+        </div>
+<script>
+localStorage.clear()
+</script>
+    </header>
+{% endblock header %}
+{% block body %}
+
+    
+    <div class="bg-light py-3" style="margin-top: 6em;"> 
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <span class="icon-check_circle display-3 text-success"></span>
+            <h2 class="display-3 text-black" id="thankyou">Thank you!</h2>
+            <p class="lead mb-5" id="thankyoubody">You order was successfuly completed.</p>
+            <p><a href="/store/" class="btn btn-sm height-auto px-4 py-3 btn-primary">Back to shop</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+localStorage.clear()
+</script>
+
+{% endblock body %}
