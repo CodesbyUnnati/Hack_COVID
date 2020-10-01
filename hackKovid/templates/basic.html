@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.ico' %}"/>
+    <title>{% block title %}{% endblock title %} | Hack-COVID</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <!-- Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+
+    <script type="text/javascript" src="{% static 'assets/js/main.js' %}">
+    </script>
+
+    <!-- Stylesheets -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/flaticon.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    
+    
+
+</head>
+
+<body>
+
+    {% block header %}
+    
+    {% endblock header %}
+
+{% block body %}
+
+{% endblock body %}
+
+
+
+	<!-- ======= Footer ======= -->
+	<section id="contact">
+		<div class="section-title">
+			<h2>Contact</h2>
+
+		</div>
+		<footer id="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 footer-info">
+							<h3>
+								<img src="{% static 'img/Logo-HC.png' %}" style="width: 130px; margin-left: 80px;" />
+							</h3>
+                            <p>
+                                This website tells you about the present COVID-19 cases in India.
+                            </p>
+						</div>
+
+						<div class="col-lg-4 col-md-6 footer-links">
+							<h4>Useful Links</h4>
+							<ul>
+								<li>
+									<i class="ion-ios-arrow-right"></i> <a href="/">Home</a>
+								</li>
+								<li>
+									<i class="ion-ios-arrow-right"></i> <a href="#modes">Modes</a>
+								</li>
+								<li>
+									<i class="ion-ios-arrow-right"></i> <a href="#symptoms">Symptoms</a>
+								</li>
+								<li>
+									<i class="ion-ios-arrow-right"></i> <a href="#prevention">Prevention</a>
+								</li>
+
+							</ul>
+						</div>
+
+						<div class="col-lg-4 col-md-6 footer-contact">
+							<h4>Contact Us</h4>
+							<p>
+								<b>Hack-COVID- </b>Frontline Logistics
+								P.O. Box: 314
+								Office No: 4, Floor 1, Tower 1, Akash Tower, Delhi, India.
+								<br />
+
+								<strong>Phone:</strong>+91 8959631088<br />
+								<strong>Email:</strong>hackcovid@india.com<br />
+							</p>
+
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="copyright" style="padding-bottom: 50px;">
+					Made with ❤️️ by <strong><a style="color: #FF725E;" href="https://linktr.ee/Ping_Unnati">Unnati Mishra</a> & <a style="color: #FF725E;"
+							href="https://linktr.ee/bhavyagera">Bhavya Gera</a></strong> & <strong><a style="color: #FF725E;" href="https://linktr.ee/coderaman07">Aman Ojha</a></strong>.
+				</div>
+			</div>
+		</footer>
+	</section>
+    <!-- End Footer -->
+    
+    <!-- JAVASCRIPT FOR FETChING CASES , LIVE UPDATES -->
+<script>
+      if (localStorage.getItem('cart') == null) {
+        var cart = {};
+      } else {
+        cart = JSON.parse(localStorage.getItem('cart'));
+      }
+
+
+    //   setInterval(function(){
+    //       if (localStorage.length < 1){
+    //     document.getElementById('numb').innerHTML = 0;
+    //       }
+    //       else{
+    //     document.getElementById('numb').innerHTML = localStorage.length;
+
+    //       }
+    //     }, 5);
+</script>
+
+
+<!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+	<script src="{% static 'js/jquery.zoom.min.js' %}"></script>
+	<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
