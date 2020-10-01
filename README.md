@@ -3,8 +3,8 @@
 This is not just the normal COVID-19 Website📱. It is a fully responsive website with soothing colours:) along with some twist.
 <br>
 
-<b>CHECK LIVE <a href="http://hack-covid.xyz/"> without Backend</a></b><br>
-<b>CHECK LIVE <a href="https://hackcovid19.pythonanywhere.com/"> with Backend</a></b>
+
+<b> <a href="https://hackcovid19.pythonanywhere.com/"> CHECK LIVE </a></b>
 <br>
 <h3>Check out the <a href="https://youtu.be/w4zkgtx_mtY">YouTube</a> video</h3>
 
