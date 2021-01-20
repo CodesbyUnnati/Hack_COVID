@@ -1,0 +1,96 @@
+{% extends "basic.html" %}
+{% block body %}
+{% load static %}
+{% block header %}
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center">
+    <div class="logo mr-auto">
+      <h1>
+        <!-- <img src="assets/img/Icon.png" style="margin-top: -10px;"> -->
+        <img src="{% static 'assets/img/Icon.png' %}" style="margin-top: -15px;" alt="">
+        <a href="/"><img src="{% static 'assets/img/Logo.png' %}" style="margin-top: -10px;" alt=""></a>
+      </h1>
+    </div>
+
+    <!--NAVBAR-->
+
+    <nav class="nav-menu d-none d-lg-block ml-auto">
+      <ul>
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/#modes">Modes</a></li>
+        <li><a href="/#symptoms">Symptoms</a></li>
+        <li><a href="/#prevention">Prevention</a></li>
+        <li><a href="/#india">Cases</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 1px 1px 1px 1px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: rgb(255, 233, 221);
+                border-style: none;
+                color: #fff;
+              ">
+          <a href="/store/">Store</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- NAVBAR -->
+  </div>
+</header>
+{% endblock header %}
+{% for catprods in catprod %}
+<div class="bg-light py-3" style="margin-top:4em; ">
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="border">
+            <img src="/media/{{catprods.image}}" alt="Image" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-black namee" id="name{{catprods.id}}">{{catprods.Name}}</h2>
+          <script>
+            var tit = document.getElementById('name{{catprods.id}}').innerHTML + " | Hack COVID";
+            document.title = tit;
+          </script><br />
+          <p>{{catprods.desc}}</p>
+          <p id="price{{catprods.id}}"><strong class="text-primary h4">Price : Rs. {{catprods.Price}}</strong></p>
+          <span><button class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary" onclick="AddToCart(this.id)"
+              style="color: white;" id="{{catprods.id}}">Add To Cart</button></span>
+          <span><a href="/cart" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">CheckOut</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+
+
+<script>
+  function AddToCart(itemID) {
+    console.log(itemID);
+    console.log(typeof (itemID));
+    var idstring = itemID;
+    if (cart[idstring] != undefined) {
+      qty = cart[idstring][0] + 1;
+    } else {
+      qty = 1;
+      name = document.getElementById('name' + idstring).innerHTML;
+      priceet = document.getElementById('price' + idstring).innerText.split('.')[1];
+      price = 'Rs. ' + priceet;
+      cart[idstring] = [qty, name, price];
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById(idstring).innerText = 'Added'
+  }
+</script>
+
+{% endblock body %}

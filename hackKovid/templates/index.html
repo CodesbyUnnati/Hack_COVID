@@ -1,0 +1,394 @@
+{% extends "basic.html" %}
+{% load static %}
+{% block title %}
+Home
+{% endblock title %}
+
+{% block header %}
+<!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <div class="logo mr-auto">
+                <h1>
+                    <!-- <img src="assets/img/Icon.png" style="margin-top: -10px;"> -->
+                    <img src="{% static 'assets/img/Icon.png' %}" style="margin-top: -15px;" alt="">
+                    <a href="/"><img src="{% static 'assets/img/Logo.png' %}" style="margin-top: -10px;" alt=""></a>
+                </h1>
+            </div>
+
+            <!--NAVBAR-->
+
+            <nav class="nav-menu d-none d-lg-block ml-auto">
+                <ul>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="#modes">Modes</a></li>
+                    <li><a href="#symptoms">Symptoms</a></li>
+                    <li><a href="#prevention">Prevention</a></li>
+                    <li><a href="#india">Cases</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li style="
+                font-weight: 800;
+                font-size: 13px;
+                display: inline-block;
+                padding: 1px 1px 1px 1px;
+                border-radius: 50px;
+                transition: 0.5s;
+                background: rgb(255, 233, 221);
+                border-style: none;
+                color: #fff;
+              ">
+                        <a href="store">Store</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- NAVBAR -->
+        </div>
+    </header>
+{% endblock header %}
+
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- ======= About Section ======= -->
+
+    <section id="home" class="about">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href=""><img src="{% static 'assets/img/header.jpg' %}" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0">
+
+                    <h3 style=" width: 150px; 
+   text-decoration-line: underline;text-decoration-style: underline; text-decoration-color: #FF6940;">Stay Safe</h3>
+                    <p style="text-align: left;">
+                        <br>
+
+                    <h3>CONNECTING<br> INDIA TO COMBAT<br> COVID-19</h3>
+                    <br>
+
+                    Coronavirus disease (COVID-19) is an infectious disease caused by newly discovered coronavirus.
+                    <br>
+                    <br>
+
+                    <a href="guidelines"><button>See Guidelines</button></a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!--===== End About Section ====== -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="modes">
+
+        <div class="section-title">
+            <h2>Modes Of Transmission</h2>
+
+        </div>
+
+        <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div class="container">
+
+                <div class="row">
+
+
+                    <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="{% static 'assets/img/mode-1.jpg' %}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="member-info">
+                                <h4 style="text-align: center;">Contained Objects</h4>
+                                <p>Use sanitisers and surface disinfectants with alcohol content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="{% static 'assets/img/mode-3.jpg' %}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="member-info">
+                                <h4 style="text-align: center;">Human Contact</h4>
+                                <p>Always maintain safe distancing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="{% static 'assets/img/mode-2.jpg' %}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="member-info">
+                                <h4 style="text-align: center;">Through Droplets</h4>
+                                <p>Don't spit/sneeze in public, always wear a mask.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+
+
+    <section id="symptoms">
+
+        <div class="section-title">
+            <h2>Symptoms</h2>
+
+        </div>
+
+        <!-- ======= SYMPTOMS Section ======= -->
+
+        <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="{% static 'assets/img/symptom-1.jpg' %}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="member-info">
+                                <h4 style="text-align: center;">Cough</h4>
+                                <p>Cover your mouth and take required medication, visit a doctor or take prescription on call.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="{% static 'assets/img/symptom-2.jpg' %}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="member-info">
+                                <h4 style="text-align: center;">Fever</h4>
+                                <p>In case of high fever and uneasiness, go see a doctor.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="{% static 'assets/img/symptom-3.jpg' %}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="member-info">
+                                <h4 style="text-align: center;">Headache</h4>
+                                <p>Headaches could be the early sign of fever, take proper rest and medication.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+
+    <section id="prevention">
+
+        <div class="section-title">
+            <h2>Prevention</h2>
+
+        </div>
+
+
+
+        <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="{% static 'assets/img/prevention-1.jpg' %}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="member-info">
+                                <br>
+                                <h4 style="text-align: center;">Wash Hands</h4>
+                                <p>Wash regularly with soap & water for at least 20 seconds or use an alcohol-based
+                                    hand sanitizer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="{% static 'assets/img/prevention-2.jpg' %}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="member-info"><br><br>
+                                <h4 style="text-align: center;">Use Facemask</h4>
+                                <p>
+                                    Wearing a mask or face covering in public settings can help slow the spread.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 d-flex align-items-stretch">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="{% static 'assets/img/prevention-3.jpg' %}" class="img-fluid" alt="">
+
+                            </div>
+                            <div class="member-info"><br>
+                                <h4 style="text-align: center;">Clean Surfaces</h4>
+                                <p>Droplets generated when an infected person coughs,
+                                    sneezes, or exhales. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+
+
+    <section id="india">
+
+        <div class="section-title">
+            <h2>INDIA</h2>
+            <div class="container" style="width:70%; padding-top:60px;">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Total Population</h3>
+                            <h5 class="my-2"><span id="population"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Total Cases</h3>
+                            <h5 class="my-2"><span id="cases"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Total Tests</h3>
+                            <h5 class="my-2"><span id="tests"></span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Active</h3>
+                            <h5 class="my-2"><span id="active"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Recovered</h3>
+                            <h5 class="my-2"><span id="recovered"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Deceased</h3>
+                            <h5 class="my-2"><span id="deaths"></span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-deck">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Cases Today</h3>
+                            <h5 class="my-2"><span id="todayCases"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Recoveries Today</h3>
+                            <h5 class="my-2"><span id="todayRecovered"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card"
+                            style="box-shadow:0px 10px 6px -8px #FF6940; border:1px solid #FF6940; border-radius:5px; padding:15px;">
+                            <h3>Deaths Today</h3>
+                            <h5 class="my-2"><span id="todayDeaths"></span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>fetch('https://corona.lmao.ninja/v2/countries/India')
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            document.getElementById("tests").innerHTML = data.tests;
+            document.getElementById("active").innerHTML = data.active;
+            document.getElementById("cases").innerHTML = data.cases;
+            document.getElementById("population").innerHTML = data.population;
+            document.getElementById("recovered").innerHTML = data.recovered;
+            document.getElementById("deaths").innerHTML = data.deaths;
+            document.getElementById("todayCases").innerHTML = data.todayCases;
+            document.getElementById("todayRecovered").innerHTML = data.todayRecovered;
+            document.getElementById("todayDeaths").innerHTML = data.todayDeaths;
+        })</script>
+
+{% endblock body %}
